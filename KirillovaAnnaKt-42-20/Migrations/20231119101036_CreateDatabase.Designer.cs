@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KirillovaAnnaKt_42_20.Migrations
 {
     [DbContext(typeof(StudentDbContext))]
-    [Migration("20231012122551_CreateDatabase")]
+    [Migration("20231119101036_CreateDatabase")]
     partial class CreateDatabase
     {
         /// <inheritdoc />
@@ -83,8 +83,8 @@ namespace KirillovaAnnaKt_42_20.Migrations
                         .HasColumnName("c_student_middlename")
                         .HasComment("Отчество студента");
 
-                    b.Property<int>("StudentExist")
-                        .HasColumnType("int");
+                    b.Property<bool>("StudentExist")
+                        .HasColumnType("bit");
 
                     b.HasKey("StudentId")
                         .HasName("pk_cd_student_student_id");
