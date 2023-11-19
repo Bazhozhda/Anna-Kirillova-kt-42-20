@@ -11,6 +11,5 @@ namespace KirillovaAnnaKt_42_20.Models
         public int GroupId { get; set; }
         public Group Group { get; set; }
         public bool StudentExist { get; set; }
-
     }
 }
